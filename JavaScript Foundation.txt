@@ -1,0 +1,30 @@
+Values and Types
+var t = 'hi'        | Stored as String
+var t = 'bye'       | Stored as String
+var t = false       | Stored as boolean
+var t = null        | Stored as null
+var t = undefined   | Stored as null != undefined . undefined is a unknown state of the object.
+
+Operators
+Examples of Operators are /,*,-,+.
+To for an expression we need Operators.
+
++ is a Operator
+3 + 5 is a Expression
+3 + 5; is a Statement
+
+
+Variables
+
+var temp1 = 1;
+var temp2 = temp1;
+
+temp2 is refering to 1
+temp1 is refering to 1
+A Variable can only refer to value.
+Note : A Variable can never refer to a Variable.
+
+New methods learnt.
+var a = Math.random();
+var b = prompt();
+
