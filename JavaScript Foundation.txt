@@ -134,6 +134,55 @@ Console.log(obj.length); //Returns undefined.
 
 Array Completed.
 
+Functions Stared.
+
+var fun = function(){};
+
+fun['x'] = 9 ;
+fun[0] = 'cat';
+fun[1] = 'dog'
+Console.log(fun['x']); // Print 9
+Console.log(fun[0]); // Print cat
+for(var k in fun){
+    Console.log(k); //print x 0 1
+}
+Console.log(fun.length); // undefined
+for(int i = 0 ; i < fun.length; i++){
+    Console.log(i); // will not execute because fun.length property is undefined.
+}
+
+Functions are similar to a object also. 
+for-with-semicolon is rarely used on a function.
+
+How is function different from object?
+we can do this.
+fun(); // This is called as the function has been invoked.
+
+
+
+Functions Invocation vs Functions definition?
+var fun = function(){}; // Function definition
+fun(); // Function Invocation
+
+combined?
+var result = function(){ Console.log(2)  }(); //function definition and Invocation
+Console.log(result); //undefined 
+
+
+var result = function(){ 
+    Console.log(2);
+    return 1;
+  }(); //function definition and Invocation
+Console.log(result); // print 1
+
+
+
+
+
+
+
+
+
 
 
 
