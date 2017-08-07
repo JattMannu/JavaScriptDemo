@@ -28,3 +28,115 @@ New methods learnt.
 var a = Math.random();
 var b = prompt();
 
+
+Topic 1.4 : Objects and Properties
+
+What is a Object?
+A simple sort of value that has the ability to store many Properties.
+A property is a key and value pair.
+We say an object "contains" other values.
+In javascript all values are objects.
+
+What is a "Object Literal"? => Literally an object.
+{}
+
+What is the dot notation?
+var obj = {};
+obj.x = 9; this means obj['x']
+Console.log(obj.x);
+
+What is bracket notation?
+var obj = {};
+obj['x'] = 9;
+Console.log(obj['x']);
+
+Relationship between dot notation and bracket notation?
+obj.x = 9; this means obj['x']
+Limitation of dot notation is obj[var1] cannot be converted to dot notation
+if you type obj.var1 it means obj['var1'] converted ouu Variable var1 into string literal.
+
+When to use dot notation?
+limited features.
+
+When to use bracket notation?
+Very flexiabled we can add speical characters.
+obj['~/ [."4'] = 9
+Console.log(obj['~/ [."4']) will print 9.
+
+How to convert from dot notation to braket notation?
+
+How to convert from bracket notation to dot notation?
+
+How to make property key ?
+
+How to add special characters to property keys?
+via bracket notation
+or 
+var obj = {
+    x : 9,    //We do not need to 'x' quote x because it is a string but if use speical chars
+    '~/ [."4' : 'cat' //needed the quote for the key.
+};
+
+How are key kept?
+obj['0'] = 'test1';  // the key 0 is kept as string.
+obj[0] = 'test1'  // they key 0 is still kept at string.
+All keys are converted into string before stored.
+
+
+Arrays Started.
+
+Sample Code:
+var obj = {}; //when obj is an object
+
+obj['x'] = 9;
+obj[0] = 'cat';  //0 is saved as string.
+Console.log(obj['x']); // Prints 9
+Console.log(obj[0]); // Prints cat
+
+for(var k in obj){
+    Console.log(k); // Prints x and 0. Print all the keys.
+}
+
+If obj is a array?
+
+var arr = []; //when arr is an array.
+
+arr['x'] = 9;
+arr[0] = 'cat';  //0 is saved as string.
+Console.log(arr['x']); // Prints 9
+Console.log(arr[0]); // Prints cat
+
+for(var k in obj){
+    Console.log(k); // Prints x and 0. Print all the keys.
+}
+
+No difference in array and object in this code.
+So what is the difference?
+Array has a few optimization.Making them good for storing sequence of infromation in integer keys.
+
+Console.log(arr.length); // This will print 1. 
+all dot notation can be convert to bracket notation
+Console.log(arr['length']); // This will print 1. 
+
+enumerable means countable.
+unenumerable means uncountable.
+Array's length property is unenumerable there for it does not show up in the for loop.
+
+Why is the length 1 but not 2 ?
+Only the integer keys are counted in the length. Any other are ignored.
+
+
+Interesting fact.
+If you want to travers all the integer key in the array.
+We must use for(int i ; i < arr.length; i++) however this wont work for object.
+Because an Object does not have the length attribute.So
+Console.log(obj.length); //Returns undefined.
+
+Array Completed.
+
+
+
+
+
+
+
