@@ -1,3 +1,5 @@
+http://jse-autodesk.hackreactor.com/content/testing-frameworks.html
+
 Values and Types
 var t = 'hi'        | Stored as String
 var t = 'bye'       | Stored as String
@@ -176,6 +178,35 @@ var result = function(){
 Console.log(result); // print 1
 
 
+what is Dynamic Arguments list?
+Function with no named parameters.
+
+
+var result = function(n1 , n2 , n3){ 
+    Console.log(arguments);
+  }(); //function definition and Invocation
+Console.log(1 , 'cat'); // print [1, 'cat']
+
+
+
+How to pass function to functions?
+var myfunc = function(n1 , n2 , n3){ 
+    Console.log(n1);
+  }
+
+setTimeout(
+    function(){
+        myfunc('HI');
+    },
+    1000
+);
+
+this is how u pass a function to a function that has aruguments.
+
+
+
+
+  
 
 
 
